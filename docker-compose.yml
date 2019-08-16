@@ -1,0 +1,19 @@
+version: "3"
+services:
+  sass:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    networks:
+      - test
+
+networks:
+  test:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
