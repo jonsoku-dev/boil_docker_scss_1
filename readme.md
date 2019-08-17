@@ -16,7 +16,11 @@ $ cd docker-sass
 $ docker-compose up
 ```
 
-## 컨테이너 안에 들어가보기
+## 브라우저에서 열기
+
+http://localhost:8080
+
+## (참고)컨테이너 안에 들어가보기
 
 ```bash
 $ docker ps -a

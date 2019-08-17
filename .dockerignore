@@ -1,0 +1,6 @@
+images
+node_modules
+docker-compose.yml
+Dockerfile
+Dockerfile.dev
+readme.md

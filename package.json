@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass scss/main.scss css/main.css  -w"
+    "watch": "node-sass scss/main.scss css/main.css  -w",
+    "live": "live-server"
   },
   "keywords": [],
   "author": "",

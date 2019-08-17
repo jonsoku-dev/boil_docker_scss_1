@@ -1,12 +1,25 @@
 version: "3"
 services:
   sass:
+    container_name: sass
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.devSass
       context: ./
     volumes:
       - ./:/app
       - /app/node_modules
+    networks:
+      - test
+  live:
+    container_name: live
+    build:
+      dockerfile: Dockerfile.devServer
+      context: ./
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
     networks:
       - test
 
